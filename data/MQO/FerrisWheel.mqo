@@ -18,7 +18,7 @@ Scene {
 	}
 }
 Material 6 {
-	"mat1" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00) tex("C:\Users\student\Desktop\ÉÇÉfÉãÉrÉÖÅ[Éè\êßçÏï®\KOC\TEXTURE\Metal_floor.jpg")
+	"mat1" col(1.000 1.000 1.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00) tex("data\TEXTURE\Metal_floor.jpg")
 	"mat2" col(0.922 0.922 0.922 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
 	"mat3" col(0.992 0.000 0.012 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
 	"mat4" col(1.000 0.839 0.000 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.000) power(5.00)
