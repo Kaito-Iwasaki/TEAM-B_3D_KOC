@@ -1,0 +1,355 @@
+#==============================================================================
+#
+# 『モデルビューワ』スクリプトファイル [model.txt]
+# Author : AKIRA TANAKA
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# テクスチャ数
+#------------------------------------------------------------------------------
+NUM_TEXTURE = 8
+
+#------------------------------------------------------------------------------
+# テクスチャファイル名
+#------------------------------------------------------------------------------
+TEXTURE_FILENAME = data/TEXTURE/sky000.jpg			# [0]空テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/mountain000.png		# [1]山テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/field000.jpg		# [2]地面テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/wall003.jpg			# [3]壁テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/metal_floor.jpg		# [6]鉄地面テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/wiremesh.png	# [7]ワイヤーテクスチャ
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 16
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/MODEL/Factory/grinder000.x				# [0]壁
+MODEL_FILENAME = data/MODEL/Factory/press.x						# [1]壁
+MODEL_FILENAME = data/MODEL/Factory/saw000.x					# [2]壁
+MODEL_FILENAME = data/MODEL/Factory/comber.x					# [3]コンベア
+MODEL_FILENAME = data/MODEL/Factory/meat00.x					# [4]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/rawchicken.x				# [5]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/friedchicken.x				# [6]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/press00.x					# [7]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/press01.x					# [8]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/gasburner.x					# [9]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/ventilationfan.x			# [10]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/ventilationfanpuropera.x	# [11]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/bloodknife.x				# [12]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/lift.x						# [13]リフト
+MODEL_FILENAME = data/MODEL/box000.x							# [14]リフト
+MODEL_FILENAME = data/MODEL/Factory/humannurture.x						# [13]リフト
+
+
+#------------------------------------------------------------------------------
+# カメラ情報
+#------------------------------------------------------------------------------
+CAMERASET
+	POS = 0.0 180.0 -720.0			# 視点
+	REF = 0.0 0.0 0.0				# 注視点
+END_CAMERASET
+
+#------------------------------------------------------------------------------
+# ライト情報
+#------------------------------------------------------------------------------
+LIGHTSET
+	DIRECTION = 0.22 -0.87 0.44		# 方向
+	DIFFUSE = 1.0 1.0 1.0			# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = -0.18 0.88 -0.44	# 方向
+	DIFFUSE = 0.65 0.65 0.65		# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = 0.89 -0.11 0.44		# 方向
+	DIFFUSE = 0.15 0.15 0.15		# 拡散光
+END_LIGHTSET
+
+#------------------------------------------------------------------------------
+# 空情報
+#------------------------------------------------------------------------------
+#SKYSET
+	TEXTYPE = 0
+	MOVE = 0.00002
+END_SKYSET
+
+#------------------------------------------------------------------------------
+# 山情報
+#------------------------------------------------------------------------------
+#MOUNTAINSET
+	TEXTYPE = 1
+END_MOUNTAINSET
+
+#------------------------------------------------------------------------------
+# 地面情報
+#------------------------------------------------------------------------------
+FIELDSET
+	TEXTYPE = 6
+	POS = 750 0 0
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 6
+	POS = 3000 0 500
+	ROT = 0 0 0
+	BLOCK = 4 4
+	SIZE = 500 500
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 6
+	POS = 5250 0 0
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 6
+	POS = 7500 0 500
+	ROT = 0 0 0
+	BLOCK = 4 4
+	SIZE = 500 500
+END_FIELDSET
+
+FIELDSET
+	TEXTYPE = 6
+	POS = 9750 0 0
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_FIELDSET
+
+#------------------------------------------------------------------------------
+# 壁情報
+#------------------------------------------------------------------------------
+WALLSET
+	TEXTYPE = 3
+	POS = -500 0 0
+	ROT = 0 -90 0
+	BLOCK = 2 2
+	SIZE = 500 500
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 750 0 500
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 2000 0 1000
+	ROT = 0 -90 0
+	BLOCK = 2 2
+	SIZE = 500 500
+END_WALLSET
+WALLSET
+	TEXTYPE = 3
+	POS = 3000 0 1500
+	ROT = 0 0 0
+	BLOCK = 4 2
+	SIZE = 500 500
+END_WALLSET
+WALLSET
+	TEXTYPE = 3
+	POS = 4000 0 1000
+	ROT = 0 90 0
+	BLOCK = 2 2
+	SIZE = 500 500
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 5250 0 500
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 6500 0 1000
+	ROT = 0 -90 0
+	BLOCK = 2 2
+	SIZE = 500 500
+END_WALLSET
+WALLSET
+	TEXTYPE = 3
+	POS = 7500 0 1500
+	ROT = 0 0 0
+	BLOCK = 4 2
+	SIZE = 500 500
+END_WALLSET
+WALLSET
+	TEXTYPE = 3
+	POS = 8500 0 1000
+	ROT = 0 90 0
+	BLOCK = 2 2
+	SIZE = 500 500
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 9750 0 500
+	ROT = 0 0 0
+	BLOCK = 5 2
+	SIZE = 500 500
+END_WALLSET
+
+#------------------------------------------------------------------------------
+# 台
+#------------------------------------------------------------------------------
+FIELDSET
+	TEXTYPE = 6
+	POS = 3000 80 0
+	ROT = 0 0 0
+	BLOCK = 1 1
+	SIZE = 500 500
+END_FIELDSET
+WALLSET
+	TEXTYPE = 6
+	POS = 3000 0 -250
+	ROT = 0 0 0
+	BLOCK = 1 1
+	SIZE = 500 80
+END_WALLSET
+WALLSET
+	TEXTYPE = 6
+	POS = 3000 0 250
+	ROT = 0 180 0
+	BLOCK = 1 1
+	SIZE = 500 80
+END_WALLSET
+WALLSET
+	TEXTYPE = 6
+	POS = 2750 0 0
+	ROT = 0 90 0
+	BLOCK = 1 1
+	SIZE = 500 80
+END_WALLSET
+WALLSET
+	TEXTYPE = 6
+	POS = 3250 0 0
+	ROT = 0 270 0
+	BLOCK = 1 1
+	SIZE = 500 80
+END_WALLSET
+
+#------------------------------------------------------------------------------
+# モデル配置情報
+#------------------------------------------------------------------------------
+#-----------------------------------------
+# ミンチ機
+#-----------------------------------------
+MODELSET
+	TYPE = 0
+	POS = 2500 0 800
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 0
+	POS = 3000 0 800
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 0
+	POS = 3500 0 800
+	ROT = 0 0 0
+END_MODELSET
+
+#-----------------------------------------
+# プレス機
+#-----------------------------------------
+
+#MODELSET
+	TYPE = 1
+	POS = 100 0 0
+	ROT = 0 0 0
+END_MODELSET
+
+#-----------------------------------------
+# ノコギリ
+#-----------------------------------------
+
+MODELSET
+	TYPE = 2
+	POS = 3000 80 0
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+
+#-----------------------------------------
+# コンベア
+#-----------------------------------------
+MODELSET
+	TYPE = 3
+	POS = 2500 0 1000
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 3000 0 1000
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 3
+	POS = 3500 0 1000
+	ROT = 0 0 0
+END_MODELSET
+
+#-----------------------------------------
+# カプセル
+#-----------------------------------------
+#MODELSET
+	TYPE = 14
+	POS = 900 0 300
+	ROT = 0 0 0
+END_MODELSET
+
+#-----------------------------------------
+# 箱
+#-----------------------------------------
+MODELSET
+	TYPE = 15
+	POS = 2100 0 600
+	ROT = 0 -90 0
+END_MODELSET
+
+#------------------------------------------------------------------------------
+# ビルボード配置情報
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# 草配置情報
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# プレイヤー情報
+#------------------------------------------------------------------------------
+PLAYERSET
+	MOTION_FILENAME = data\\motion_donald.txt
+	POS = 0 0 0
+	ROT = 0 0 0
+END_PLAYERSET
+
+END_SCRIPT		# この行は絶対消さないこと！
