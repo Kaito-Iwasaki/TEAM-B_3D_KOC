@@ -1,0 +1,304 @@
+#==============================================================================
+#
+# 『モデルビューワ』スクリプトファイル [model.txt]
+# Author : AKIRA TANAKA
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# テクスチャ数
+#------------------------------------------------------------------------------
+NUM_TEXTURE = 6
+
+#------------------------------------------------------------------------------
+# テクスチャファイル名
+#------------------------------------------------------------------------------
+TEXTURE_FILENAME = data/TEXTURE/sky000.jpg			# [0]空テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/mountain000.png		# [1]山テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/KOC_TEX/Renga.jpg	# [2]地面テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/wall100.jpg			# [3]壁テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 15
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/MODEL/Land/car.x				# [0]
+MODEL_FILENAME = data/MODEL/Land/chicken.x			# [1]
+MODEL_FILENAME = data/MODEL/Land/chickenbucket.x		# [2]
+MODEL_FILENAME = data/MODEL/Land/FaceinPanel.x		# [3]
+MODEL_FILENAME = data/MODEL/Land/foundation.x		# [4]
+MODEL_FILENAME = data/MODEL/Land/gate.x				# [5]
+MODEL_FILENAME = data/MODEL/Land/slide.x				# [6]
+MODEL_FILENAME = data/MODEL/Land/swing000.x			# [7]
+MODEL_FILENAME = data/MODEL/Land/wheel.x				# [8]
+MODEL_FILENAME = data/MODEL/Land/car_field.x			# [9]
+MODEL_FILENAME = data/MODEL/Land/fence.x				# [10]
+MODEL_FILENAME = data/MODEL/Land/street_trees.x		# [11]
+MODEL_FILENAME = data/MODEL/Land/shop.x				# [12]
+MODEL_FILENAME = data/MODEL/Land/eat_desk.x		# [13]
+MODEL_FILENAME = data/MODEL/Land/eat_chair.x				# [14]
+
+
+#------------------------------------------------------------------------------
+# カメラ情報
+#------------------------------------------------------------------------------
+CAMERASET
+	POS = 0.0 180.0 -720.0			# 視点
+	REF = 0.0 0.0 0.0				# 注視点
+END_CAMERASET
+
+#------------------------------------------------------------------------------
+# ライト情報
+#------------------------------------------------------------------------------
+LIGHTSET
+	DIRECTION = 0.22 -0.87 0.44		# 方向
+	DIFFUSE = 1.0 1.0 1.0			# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = -0.18 0.88 -0.44	# 方向
+	DIFFUSE = 0.65 0.65 0.65		# 拡散光
+END_LIGHTSET
+
+LIGHTSET
+	DIRECTION = 0.89 -0.11 0.44		# 方向
+	DIFFUSE = 0.15 0.15 0.15		# 拡散光
+END_LIGHTSET
+
+#------------------------------------------------------------------------------
+# 空情報
+#------------------------------------------------------------------------------
+SKYSET
+	TEXTYPE = 0
+	MOVE = 0.00002
+END_SKYSET
+
+#------------------------------------------------------------------------------
+# 山情報
+#------------------------------------------------------------------------------
+MOUNTAINSET
+	TEXTYPE = 1
+END_MOUNTAINSET
+
+#------------------------------------------------------------------------------
+# 地面情報
+#------------------------------------------------------------------------------
+FIELDSET
+	TEXTYPE = 2
+	POS = 0 0 0
+	ROT = 0 0 0
+	BLOCK = 16 16
+	SIZE = 150 150
+END_FIELDSET
+
+#------------------------------------------------------------------------------
+# 壁情報
+#------------------------------------------------------------------------------
+WALLSET
+	TEXTYPE = 3
+	POS = 0 -80 640
+	ROT = 0 180 0
+	BLOCK = 16 1
+	SIZE = 80 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 640 -80 0
+	ROT = 0 270 0
+	BLOCK = 16 1
+	SIZE = 80 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = 0 -80 -640
+	ROT = 0 0 0
+	BLOCK = 16 1
+	SIZE = 80 80
+END_WALLSET
+
+WALLSET
+	TEXTYPE = 3
+	POS = -640 -80 0
+	ROT = 0 90 0
+	BLOCK = 16 1
+	SIZE = 80 80
+END_WALLSET
+
+#------------------------------------------------------------------------------
+# モデル配置情報
+#------------------------------------------------------------------------------
+#入口
+MODELSET
+	TYPE = 5
+	POS = 0 0 -1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+
+#街路樹
+#1
+MODELSET
+	TYPE = 11
+	POS = 400 0 -1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#2
+MODELSET
+	TYPE = 11
+	POS = 900 0 -1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#3
+MODELSET
+	TYPE = 11
+	POS = 1050 0 -850
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+
+#4
+MODELSET
+	TYPE = 11
+	POS = 1050 0 -350
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+
+#5
+MODELSET
+	TYPE = 11
+	POS = 1050 0 150
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+#6
+MODELSET
+	TYPE = 11
+	POS = 1050 0 650
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+#7
+MODELSET
+	TYPE = 11
+	POS = 1050 0 1150
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+
+#8逆サイ
+MODELSET
+	TYPE = 11
+	POS = -400 0 -1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#9
+MODELSET
+	TYPE = 11
+	POS = -900 0 -1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#10
+MODELSET
+	TYPE = 11
+	POS = -1050 0 -850
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+
+#11
+MODELSET
+	TYPE = 11
+	POS = -1050 0 -350
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+
+#12
+MODELSET
+	TYPE = 11
+	POS = -1050 0 150
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+#13
+MODELSET
+	TYPE = 11
+	POS = -1050 0 650
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+#14
+MODELSET
+	TYPE = 11
+	POS = -1050 0 1150
+	ROT = 0 90 0
+	SHADOW = 0
+END_MODELSET
+#店
+MODELSET
+	TYPE = 12
+	POS = -300 0 1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#土台
+MODELSET
+	TYPE = 4
+	POS = 500 0 1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+#車輪
+MODELSET
+	TYPE = 8
+	POS = 500 45 1000
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+
+#机
+MODELSET
+	TYPE = 13
+	POS = 0 0 0
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+
+#椅子
+MODELSET
+	TYPE = 14
+	POS = -40 0 0
+	ROT = 0 0 0
+	SHADOW = 0
+END_MODELSET
+
+#------------------------------------------------------------------------------
+# ビルボード配置情報
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+# 草配置情報
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# プレイヤー情報
+#------------------------------------------------------------------------------
+
+
+
+END_SCRIPT		# この行は絶対消さないこと！
