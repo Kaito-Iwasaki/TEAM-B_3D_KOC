@@ -4,18 +4,11 @@ Format Text Ver 1.0
 Scene {
 	pos -197.1779 -524.7706 6144.0020
 	lookat 0.0000 0.0000 0.0000
-	head -38.9138
-	pich 0.5292
-	bank 0.0000
+	head -40.4238
+	pich 0.8092
 	ortho 0
 	zoom2 1.2206
 	amb 0.250 0.250 0.250
-	dirlights 1 {
-		light {
-			dir 0.408 0.408 0.816
-			color 1.000 1.000 1.000
-		}
-	}
 }
 Material 6 {
 	"mat1" col(0.000 0.878 0.851 1.000) dif(0.800) amb(0.600) emi(0.000) spc(0.320) power(13.00) tex("C:\Users\student\OneDrive - yoshida-g.ac.jp\デスクトップ\foamwater.jpg") aplane("noise.bmp")
