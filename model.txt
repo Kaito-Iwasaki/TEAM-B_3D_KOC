@@ -30,23 +30,23 @@ NUM_MODEL = 17
 #------------------------------------------------------------------------------
 # モデルファイル名
 #------------------------------------------------------------------------------
-MODEL_FILENAME = data/MODEL/KOC/car.x				# [0]ゴーカート・車
-MODEL_FILENAME = data/MODEL/KOC/chicken.x			# [1]観覧車・乗車部
-MODEL_FILENAME = data/MODEL/KOC/chickenbucket.x		# [2]チキン入り容器
-MODEL_FILENAME = data/MODEL/KOC/FaceinPanel.x		# [3]顔ハメパネル
-MODEL_FILENAME = data/MODEL/KOC/foundation.x		# [4]観覧車・土台
-MODEL_FILENAME = data/MODEL/KOC/gate.x				# [5]門
-MODEL_FILENAME = data/MODEL/KOC/slide.x				# [6]滑り台
-MODEL_FILENAME = data/MODEL/KOC/swing000.x			# [7]ブランコ
-MODEL_FILENAME = data/MODEL/KOC/wheel.x				# [8]観覧車・車輪
-MODEL_FILENAME = data/MODEL/KOC/car_field.x			# [9]ゴーカート・場
-MODEL_FILENAME = data/MODEL/KOC/fence.x				# [10]柵
-MODEL_FILENAME = data/MODEL/KOC/street_trees.x		# [11]街路樹
-MODEL_FILENAME = data/MODEL/KOC/shop.x				# [12]店
-MODEL_FILENAME = data/MODEL/KOC/Eating_Space_Set.x	# [13]食事スペースセット
-MODEL_FILENAME = data/MODEL/KOC/seesaw.x			# [14]シーソー
-MODEL_FILENAME = data/MODEL/KOC/curb.x				# [15]縁石
-MODEL_FILENAME = data/MODEL/KOC/car_fake.x			# [16]駐車された車
+MODEL_FILENAME = data/MODEL/Land/car.x				# [0]ゴーカート・車
+MODEL_FILENAME = data/MODEL/Land/chicken.x			# [1]観覧車・乗車部
+MODEL_FILENAME = data/MODEL/Land/chickenbucket.x	# [2]チキン入り容器
+MODEL_FILENAME = data/MODEL/Land/FaceinPanel.x		# [3]顔ハメパネル
+MODEL_FILENAME = data/MODEL/Land/foundation.x		# [4]観覧車・土台
+MODEL_FILENAME = data/MODEL/Land/gate.x				# [5]門
+MODEL_FILENAME = data/MODEL/Land/slide.x			# [6]滑り台
+MODEL_FILENAME = data/MODEL/Land/swing000.x			# [7]ブランコ
+MODEL_FILENAME = data/MODEL/Land/wheel.x			# [8]観覧車・車輪
+MODEL_FILENAME = data/MODEL/Land/car_field.x		# [9]ゴーカート・場
+MODEL_FILENAME = data/MODEL/Land/fence.x			# [10]柵
+MODEL_FILENAME = data/MODEL/Land/street_trees.x		# [11]街路樹
+MODEL_FILENAME = data/MODEL/Land/shop.x				# [12]店
+MODEL_FILENAME = data/MODEL/Land/Eating_Space_Set.x	# [13]食事スペースセット
+MODEL_FILENAME = data/MODEL/Land/seesaw.x			# [14]シーソー
+MODEL_FILENAME = data/MODEL/Land/curb.x				# [15]縁石
+MODEL_FILENAME = data/MODEL/Land/car_fake.x			# [16]駐車された車
 #------------------------------------------------------------------------------
 # カメラ情報
 #------------------------------------------------------------------------------
