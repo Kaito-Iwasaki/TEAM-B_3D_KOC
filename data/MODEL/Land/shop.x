@@ -752,7 +752,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "C:\\Users\\student\\Downloads\\door.jpg";
+    "data\\TEXTURE\\door.jpg";
    }
   }
   Material {
@@ -761,7 +761,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "C:\\Users\\student\\Downloads\\glass.png";
+    "data\\TEXTURE\\glass.png";
    }
   }
   Material {
