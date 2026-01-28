@@ -311,7 +311,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "data\\TEXTURE\\conveyer.png";
+    "data\\TEXTURE\\comber.png";
    }
   }
   Material {
