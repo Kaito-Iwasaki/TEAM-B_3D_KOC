@@ -944,6 +944,19 @@ BILLBOARDSET
 	SIZE = 25 50
 END_BILLBOARDSET
 
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = -290 25 400
+	ROT = 0 0 0
+	SIZE = 25 50
+END_BILLBOARDSET
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = -310 50 400
+	ROT = 0 0 0
+	SIZE = 50 100
+END_BILLBOARDSET
+
 #------------------------------------------------------------------------------
 # ëêîzíuèÓïÒ
 #------------------------------------------------------------------------------
