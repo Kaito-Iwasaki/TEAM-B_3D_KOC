@@ -9,7 +9,7 @@ SCRIPT			# この行は絶対消さないこと！
 #------------------------------------------------------------------------------
 # テクスチャ数
 #------------------------------------------------------------------------------
-NUM_TEXTURE = 7
+NUM_TEXTURE = 8
 
 #------------------------------------------------------------------------------
 # テクスチャファイル名
@@ -21,6 +21,7 @@ TEXTURE_FILENAME = data/TEXTURE/wall100.jpg			# [3]壁テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/concrete.jpg		# [6]駐車場concrete
+TEXTURE_FILENAME = data/TEXTURE/human000.png		# [7]岩崎
 
 #------------------------------------------------------------------------------
 # モデル数
@@ -914,6 +915,34 @@ END_MODELSET
 #------------------------------------------------------------------------------
 # ビルボード配置情報
 #------------------------------------------------------------------------------
+
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = -820 50 -70
+	ROT = 0 0 0
+	SIZE = 50 100
+END_BILLBOARDSET
+
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = 90 25 1035
+	ROT = 0 0 0
+	SIZE = 25 50
+END_BILLBOARDSET
+
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = 640 250 390
+	ROT = 0 0 0
+	SIZE = 25 50
+END_BILLBOARDSET
+
+BILLBOARDSET
+	TEXTYPE = 7
+	POS = -600 25 25
+	ROT = 0 0 0
+	SIZE = 25 50
+END_BILLBOARDSET
 
 #------------------------------------------------------------------------------
 # 草配置情報
