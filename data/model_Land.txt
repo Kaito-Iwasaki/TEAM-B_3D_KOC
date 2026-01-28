@@ -16,11 +16,11 @@ NUM_TEXTURE = 7
 #------------------------------------------------------------------------------
 TEXTURE_FILENAME = data/TEXTURE/KOsky000.jpg		# [0]空テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/mountain000.png		# [1]山テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/KOC_TEX/Renga.jpg	# [2]地面テクスチャ
+TEXTURE_FILENAME = data/TEXTURE/Renga.jpg			# [2]地面テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/wall100.jpg			# [3]壁テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/KOC_TEX/concrete.jpg		# [6]
+TEXTURE_FILENAME = data/TEXTURE/concrete.jpg		# [6]駐車場concrete
 
 #------------------------------------------------------------------------------
 # モデル数
