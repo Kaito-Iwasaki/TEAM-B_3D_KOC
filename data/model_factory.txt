@@ -21,33 +21,38 @@ TEXTURE_FILENAME = data/TEXTURE/wall003.jpg			# [3]壁テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/tree000.png			# [4]木テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/grass000.png		# [5]草テクスチャ
 TEXTURE_FILENAME = data/TEXTURE/metal_floor.jpg		# [6]鉄地面テクスチャ
-TEXTURE_FILENAME = data/TEXTURE/wiremesh.png	# [7]ワイヤーテクスチャ
+TEXTURE_FILENAME = data/TEXTURE/wiremesh.png		# [7]ワイヤーテクスチャ
 
 #------------------------------------------------------------------------------
 # モデル数
 #------------------------------------------------------------------------------
-NUM_MODEL = 16
+NUM_MODEL = 22
 
 #------------------------------------------------------------------------------
 # モデルファイル名
 #------------------------------------------------------------------------------
-MODEL_FILENAME = data/MODEL/Factory/grinder000.x				# [0]壁
-MODEL_FILENAME = data/MODEL/Factory/press.x						# [1]壁
-MODEL_FILENAME = data/MODEL/Factory/saw000.x					# [2]壁
-MODEL_FILENAME = data/MODEL/Factory/comber.x					# [3]コンベア
-MODEL_FILENAME = data/MODEL/Factory/meat00.x					# [4]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/rawchicken.x				# [5]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/friedchicken.x				# [6]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/press00.x					# [7]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/press01.x					# [8]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/gasburner.x					# [9]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/ventilationfan.x			# [10]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/ventilationfanpuropera.x	# [11]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/bloodknife.x				# [12]フライヤー
-MODEL_FILENAME = data/MODEL/Factory/lift.x						# [13]リフト
-MODEL_FILENAME = data/MODEL/box000.x							# [14]リフト
-MODEL_FILENAME = data/MODEL/Factory/humannurture.x						# [13]リフト
-
+MODEL_FILENAME = data/MODEL/Factory/bloodknife.x				# [0]血の付いたナイフ
+MODEL_FILENAME = data/MODEL/Factory/comber.x					# [1]コンベア
+MODEL_FILENAME = data/MODEL/Factory/drone.x						# [2]ドローン
+MODEL_FILENAME = data/MODEL/Factory/friedchicken.x				# [3]チキン
+MODEL_FILENAME = data/MODEL/Factory/r_fryer.x					# [4]フライヤー
+MODEL_FILENAME = data/MODEL/Factory/gasburner00.x				# [5]ガスバーナー
+MODEL_FILENAME = data/MODEL/Factory/grinder000.x				# [6]ミンチ機
+MODEL_FILENAME = data/MODEL/Factory/lift.x						# [7]リフト
+MODEL_FILENAME = data/MODEL/Factory/meat00.x					# [8]肉
+MODEL_FILENAME = data/MODEL/Factory/press.x						# [9]張りぼてプレス機
+MODEL_FILENAME = data/MODEL/Factory/press00.x					# [10]プレス機
+MODEL_FILENAME = data/MODEL/Factory/press01.x					# [11]プレス機の中身
+MODEL_FILENAME = data/MODEL/Factory/r_comber.x					# [12]模型のコンベア
+MODEL_FILENAME = data/MODEL/Factory/fryer.x						# [13]模型のフライヤー
+MODEL_FILENAME = data/MODEL/Factory/r_grinder.x					# [14]模型のミンチ機
+MODEL_FILENAME = data/MODEL/Factory/r_gasburner.x				# [15]模型のガスバーナー
+MODEL_FILENAME = data/MODEL/Factory/r_humannurture.x			# [16]模型のカプセル
+MODEL_FILENAME = data/MODEL/Factory/rawchicken.x				# [17]揚げた肉
+MODEL_FILENAME = data/MODEL/Factory/saw000.x					# [18]のこぎり
+MODEL_FILENAME = data/MODEL/Factory/ventilationfan.x			# [19]換気扇
+MODEL_FILENAME = data/MODEL/Factory/ventilationfanpuropera.x	# [20]換気扇のプロペラ
+MODEL_FILENAME = data/MODEL/Factory/woodbox.x					# [21]木箱
 
 #------------------------------------------------------------------------------
 # カメラ情報
@@ -217,35 +222,36 @@ END_WALLSET
 #------------------------------------------------------------------------------
 FIELDSET
 	TEXTYPE = 6
-	POS = 3000 80 0
+	POS = 3000 80 1000
 	ROT = 0 0 0
 	BLOCK = 1 1
-	SIZE = 500 500
+	SIZE = 1200 500
 END_FIELDSET
 WALLSET
 	TEXTYPE = 6
-	POS = 3000 0 -250
+	POS = 3000 0 750
 	ROT = 0 0 0
 	BLOCK = 1 1
-	SIZE = 500 80
+	SIZE = 1200 80
 END_WALLSET
 WALLSET
 	TEXTYPE = 6
-	POS = 3000 0 250
+	POS = 3000 0 1250
 	ROT = 0 180 0
 	BLOCK = 1 1
-	SIZE = 500 80
+	SIZE = 1200 80
 END_WALLSET
 WALLSET
 	TEXTYPE = 6
-	POS = 2750 0 0
+	POS = 2400 0 1000
 	ROT = 0 90 0
 	BLOCK = 1 1
 	SIZE = 500 80
 END_WALLSET
+
 WALLSET
 	TEXTYPE = 6
-	POS = 3250 0 0
+	POS = 3600 0 1000
 	ROT = 0 270 0
 	BLOCK = 1 1
 	SIZE = 500 80
@@ -257,32 +263,22 @@ END_WALLSET
 #-----------------------------------------
 # ミンチ機
 #-----------------------------------------
-MODELSET
-	TYPE = 0
-	POS = 2500 0 800
-	ROT = 0 0 0
-END_MODELSET
 
 MODELSET
-	TYPE = 0
-	POS = 3000 0 800
-	ROT = 0 0 0
-END_MODELSET
-
-MODELSET
-	TYPE = 0
-	POS = 3500 0 800
-	ROT = 0 0 0
+	TYPE = 14
+	POS = 3500 80 1100
+	ROT = 0 180 0
 END_MODELSET
 
 #-----------------------------------------
 # プレス機
 #-----------------------------------------
 
-#MODELSET
-	TYPE = 1
-	POS = 100 0 0
-	ROT = 0 0 0
+MODELSET
+	TYPE = 9
+	POS = 3000 80 1100
+	ROT = 0 90 0
+	SHADOW = 0
 END_MODELSET
 
 #-----------------------------------------
@@ -290,8 +286,8 @@ END_MODELSET
 #-----------------------------------------
 
 MODELSET
-	TYPE = 2
-	POS = 3000 80 0
+	TYPE = 18
+	POS = 3250 80 1100
 	ROT = 0 0 0
 	SHADOW = 0
 END_MODELSET
@@ -299,40 +295,80 @@ END_MODELSET
 #-----------------------------------------
 # コンベア
 #-----------------------------------------
+
 MODELSET
-	TYPE = 3
-	POS = 2500 0 1000
+	TYPE = 12
+	POS = 2500 80 1000
 	ROT = 0 0 0
 END_MODELSET
 
 MODELSET
-	TYPE = 3
-	POS = 3000 0 1000
+	TYPE = 12
+	POS = 2750 80 1000
 	ROT = 0 0 0
 END_MODELSET
 
 MODELSET
-	TYPE = 3
-	POS = 3500 0 1000
+	TYPE = 12
+	POS = 3000 80 1000
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 12
+	POS = 3250 80 1000
+	ROT = 0 0 0
+END_MODELSET
+
+MODELSET
+	TYPE = 12
+	POS = 3500 80 1000
 	ROT = 0 0 0
 END_MODELSET
 
 #-----------------------------------------
 # カプセル
 #-----------------------------------------
-#MODELSET
-	TYPE = 14
-	POS = 900 0 300
+
+MODELSET
+	TYPE = 17
+	POS = 2500 100 1100
 	ROT = 0 0 0
 END_MODELSET
 
 #-----------------------------------------
-# 箱
+# バーナー
 #-----------------------------------------
+
 MODELSET
-	TYPE = 15
-	POS = 2100 0 600
+	TYPE = 12
+	POS = 2750 100 1100
+	ROT = 0 0 0
+END_MODELSET
+
+#-----------------------------------------
+# フライヤー
+#-----------------------------------------
+
+MODELSET
+	TYPE = 18
+	POS = 3700 0 1000
 	ROT = 0 -90 0
+	SHADOW = 0
+END_MODELSET
+
+#-----------------------------------------
+# リフト
+#-----------------------------------------
+
+#-----------------------------------------
+# ドローン
+#-----------------------------------------
+
+MODELSET
+	TYPE = 20
+	POS = 3500 80 100
+	ROT = 0 180 0
 END_MODELSET
 
 #------------------------------------------------------------------------------
@@ -347,7 +383,7 @@ END_MODELSET
 # プレイヤー情報
 #------------------------------------------------------------------------------
 PLAYERSET
-	MOTION_FILENAME = data\\motion_donald.txt
+	MOTION_FILENAME = data\\motion_muneo.txt
 	POS = 0 0 0
 	ROT = 0 0 0
 END_PLAYERSET
